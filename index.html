@@ -1102,6 +1102,7 @@ sections:[
    ['Maternity leave','Up to 8 weeks paid','Full-time employees with at least 12 months of service; for a newborn or newly adopted/placed child'],
    ['Paternity leave','**2 weeks** paid','Full-time employees with at least 12 months of service; for a newborn or newly adopted/placed child'],
    ['Sabbatical leave','As approved by the supervisor','For a medical reason or another genuine issue. **Valid proof is mandatory** and the supervisor validates it before approving. Approved for the duration requested and validated; **no extension is given once it ends** (Section C)'],
+   ['Bereavement','**No bereavement leave**: there is no special leave for it','**Bereavement cannot be applied for as a leave.** If the employee would like to work from home, bereavement is **one of the four grounds WFH is offered for** (PL-03). Every other WFH rule and eligibility condition applies unchanged: confirmed employees with 6 months completed, once in 6 months, 30 days maximum, and the request goes employee \u2192 supervisor \u2192 Sasha for approval'],
    ['Leave without pay (LWP)','Not an entitlement','**LWP applies in exactly two cases: (1) the leave is unapproved, or (2) the leave is approved but there is no leave balance left.** In either case the day is loss of pay. Request about a week ahead; maximum 15 continuous approved days in a month with management approval, then report back on day 16 or submit a resignation/separation request to HR. Exceptions only with prior written management approval. **Two back-to-back LWPs taken without any prior intimation are forwarded to HR as absconding.**']
   ],
   note:'The Leave Policy document on the ESS portal is the authoritative source: if this table and the portal ever differ, the portal wins and this page gets corrected.'},
@@ -1146,7 +1147,7 @@ sections:[
   {t:'Check eligibility', who:'Supervisor', d:'WFH is only for **confirmed employees who have completed 6 months with the company**. Employees on probation, in Training or in OJT work from office. Role must be suitable for remote work, with no active warning and performance at target for the recent review period.'},
   {t:'Confirm the eligibility criteria', who:'Supervisor', d:'These four grounds **are the eligibility criteria** for work from home. A request that does not sit in one of them is not eligible, and the answer is no. Do not invent a fifth.',
    tables:[{title:'Eligibility criteria \u2014 the four grounds', cols:['Ground','Covers'], rows:[
-     ['Bereavement','A death in the family or of someone close'],
+     ['Bereavement','A death in the family or of someone close. There is no separate bereavement leave (PL-02): WFH is how bereavement is supported, under the same rules and eligibility as every other ground'],
      ['Medical issue','The employee’s own medical situation, or caring for an immediate family member'],
      ['Wedding','The wedding of someone close to the employee'],
      ['Exams','The employee’s own examinations']]}]},
@@ -1370,6 +1371,7 @@ var SITUATIONS = [
  {q:'An employee has taken leave without approval (LWP)', to:'PL-02'},
  {q:'Someone has no leave balance left and wants leave', to:'PL-02'},
  {q:'Someone has asked for a sabbatical', to:'PL-02'},
+ {q:'Someone has had a bereavement and wants time off', to:'PL-02'},
  {q:'I need to confirm someone off probation', to:'PL-02'},
  {q:'I want to issue a warning letter', to:'WF-05'},
  {q:'Two team members are in conflict', to:'WF-04'},
