@@ -1290,16 +1290,17 @@ sections:[
 ]
 },
 {
-id:'PL-07', cat:'policy', title:'Personal Devices & System Use', short:'Office work runs on company systems only. A personal laptop needs an approval email in advance; on work from home a personal system is allowed through the remote desktop.',
+id:'PL-07', cat:'policy', title:'Personal Laptop Policy', short:'Office work runs on company systems only. A personal laptop needs VP approval on email first; on work from home a personal system is allowed through the remote desktop.',
 owner:'Operations Manager + IT', applies:'All employees, in office and on work from home', version:'1.0', effective:'28 Oct 2026', review:'28 Apr 2027',
-purpose:'Client data and PHI stay on systems the company controls and can see. That is why office work is done on company systems, and a personal laptop is never used for it without an approval email. The one standing exception is approved work from home, where a personal system is allowed because everything runs through the remote desktop and nothing is worked on locally.',
+purpose:'Client data and PHI stay on systems the company controls and can see. That is why office work is done on company systems, and a personal laptop is never used for it without approval from VP Sasha on email. The one standing exception is approved work from home, where a personal system is allowed because everything runs through the remote desktop and nothing is worked on locally.',
 sections:[
  {type:'steps', name:'A. Company systems only', time:'Every working day', steps:[
   {t:'Do office work on company systems', who:'Everyone', d:'All office work is done on **company-provided systems**. A **personal laptop cannot be used for office work**: not for client systems, work email, claims, reports, or any client data or PHI.',
    note:{k:'comp', h:'Why', x:'Work on a company system stays inside what the company secures and monitors. Work on a personal laptop does not, and the company cannot show where client data went.'}},
-  {t:'Any exception needs an approval email, before the laptop is used', who:'Employee + Supervisor', d:'If a personal laptop has to be used for any reason, it is allowed **only with an approval email**, received **before** the laptop is used for any work. The email records whose laptop it is, why it is needed, and for how long.',
-   note:{k:'esc', h:'No email, no exception', x:'A verbal OK is not an approval. Without the approval email, there is no exception, whatever was agreed on a call or at the desk. Keep the email: it is the only proof the exception was granted.'}},
-  {t:'Report it the same day', who:'Anyone → Supervisor', d:'Anyone who sees office work being done on a personal laptop without an approval email reports it to the supervisor **the same day**. If client data or PHI may have been stored or shared on that laptop, it is reported immediately and handled under PL-04.'}
+  {t:'Any exception is approved by VP Sasha on email, before the laptop is used', who:'Employee \u2192 Supervisor \u2192 VP Sasha', d:'If a personal laptop has to be used for any reason, the employee **emails their supervisor** with the reason and how long it is needed. The supervisor **forwards it to VP Sasha for approval**, keeping **Mithilesh (IT team) in cc**. Only **once VP Sasha approves on email** can the laptop be used, and then only as per the company\u2019s rules and regulations.',
+   note:{k:'esc', h:'No approval email, no exception', x:'A verbal OK is not an approval. Until VP Sasha\u2019s approval email arrives, the personal laptop is not used, whatever was agreed on a call or at the desk.'}},
+  {t:'A supervisor who needs one emails VP Sasha directly', who:'Supervisor \u2192 VP Sasha', d:'If a **supervisor** needs to use a personal laptop, they **email VP Sasha directly** for approval, in the same way, with **Mithilesh (IT team) in cc**. The same rule applies: no use until VP Sasha approves on email.'},
+  {t:'Report it the same day', who:'Anyone → Supervisor', d:'Anyone who sees office work being done on a personal laptop without VP Sasha\u2019s approval reports it to the supervisor **the same day**.'}
  ]},
  {type:'steps', name:'B. Work from home', time:'Approved WFH days only', steps:[
   {t:'A personal system is allowed, through the remote desktop', who:'Employee (WFH)', d:'An employee on **approved work from home** (PL-03) **can use their personal system**, because the company does not provide one for WFH. All work is done **through the remote desktop (RDP)**, never on the local machine. Nothing is saved, downloaded or worked on locally.',
