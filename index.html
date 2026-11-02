@@ -846,6 +846,13 @@ id:'WF-04', cat:'workflow', title:'Conflict Resolution', short:'Resolving confli
 owner:'Supervisors + HR', applies:'Supervisors, Team Leads, Managers', version:'1.4', effective:'27 Oct 2026', review:'27 Apr 2027',
 purpose:'Every conflict is handled the same way, at the right level, without raised voices, and with everything documented on email. The first step is always the route check: decide which kind of conflict it is, peers, hierarchy, two team leads, two members from different teams, or TL and above, because each follows its own path, with the same steps at a different level. If it cannot be settled at one level, the next immediate level in the hierarchy is brought in.',
 sections:[
+ {type:'steps', name:'Raising a complaint or concern', time:'Before any conflict is worked', steps:[
+  {t:'Only the person directly affected raises it', who:'Employee', d:'Any **formal or informal complaint or workplace concern** must be raised by **the individual directly affected by the issue**.'},
+  {t:'No collective complaints on behalf of a team', who:'Everyone', d:'Employees who are **not directly involved in or affected by** a complaint should **not raise it collectively on behalf of a team or group**.'},
+  {t:'Raise it individually, through the reporting hierarchy', who:'Employee \u2192 Reporting hierarchy', d:'Concerns are communicated **individually through the appropriate reporting hierarchy**, not presented as collective team complaints.',
+   note:{k:'tip', h:'Receiving a group complaint', x:'If several people bring one complaint together, ask each person who is directly affected to raise their own concern individually. Then work each one through the route check below.'}},
+  {t:'Address it directly first, then escalate if unresolved', who:'Employee', d:'Employees are encouraged to **address concerns professionally and directly with the concerned individual**, or to **escalate them through the appropriate management channels** if the issue remains unresolved.'}
+ ]},
  {type:'table', name:'The route check — do this first', cols:['Category','Who is involved','Path'],
   rows:[
    ['Peers','User-level resources, for example, a conflict between two users','Section A below'],
@@ -1380,6 +1387,7 @@ var SITUATIONS = [
  {q:'I need to confirm someone off probation', to:'PL-02'},
  {q:'I want to issue a warning letter', to:'WF-05'},
  {q:'Two team members are in conflict', to:'WF-04'},
+ {q:'A group wants to raise a complaint on behalf of the team', to:'WF-04'},
  {q:'Someone reported harassment, theft, or data misuse', to:'PL-04'},
  {q:'Someone is using a phone on the floor', to:'PL-04'},
  {q:'Only one person punched for two people going on break', to:'PL-04'},
