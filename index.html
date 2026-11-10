@@ -966,6 +966,7 @@ sections:[
   {t:'Observation: share periodic updates', who:'Supervisor', d:'Once the decision to keep a user on observation is taken, share periodic updates with the user and with the hierarchy, in writing: email or other documentation.'},
   {t:'PIP: document reason, duration and expected outcome', who:'Supervisor', d:'For a PIP, clearly document the reason, the PIP duration and the expected outcome of the PIP. Be prepared for a possible extension and pre-inform the user that the PIP may be extended. Set PIP targets on the SMART approach: specific, measurable, achievable, reliable, timely.'},
   {t:'Request the warning letter from HR in writing', who:'Supervisor \u2192 HR', d:'Send a written letter with all of the data and proper reasons to HR, requesting that the warning letter be issued for the user, keeping the hierarchy in copy. Keep sharing periodic updates.'},
+  {t:'After a behavioural PIP is cleared: 3 months of monitoring', who:'Supervisor', d:'When an employee clears a PIP raised for a behavioural issue, the same issue stays under monitoring for 3 months: the first repeat is documented on email, a second repeat can be referred to Senior Management. After 3 clean months the regular process applies (PL-08 section G).'},
   {t:'If the PIP leads to termination', who:'Supervisor \u2192 Hierarchy \u2192 VP \u2192 HR', d:'Clearly document the pre-PIP position and the outcome of the PIP, and send it to the hierarchy for approval of ask to leave. Once approval is received from the VP, the VP sends an email to HR and the further steps are followed (WF-03).'}
  ]},
  {type:'steps', name:'E. Pre-separation review \u2014 before any termination', time:'Before separation is decided', steps:[
@@ -1053,9 +1054,9 @@ sections:[
   {t:'Decide OJT outcomes', who:'Supervisor', d:'Targets met \u2192 production. Not met \u2192 extend the OJT by 1 week with weekly performance reviews and one-on-ones, and performance reports shared with stakeholders. Not cleared even after the extension \u2192 **the supervisor tells the employee clearly, in person, that they have not cleared OJT and that their case is being forwarded to HR for further action**, documents that conversation on email, and only then refers the case to HR with the data and documentation.',
    note:{k:'comp', h:'The employee hears it from the supervisor first', x:'This applies at both gates: **OJT not cleared** and **Observation not cleared**. In either case the supervisor says it clearly to the employee, that the gate has not been cleared and that the case is going to HR for further action, and documents that conversation on email before anything is forwarded. Nobody should first learn their case is with HR when HR calls them. Behavioural issues during Training, OJT or probation follow WF-05.'}},
   {t:'Move to production: metrics and stack ranking', who:'Supervisor', d:'Performance is tracked through structured metrics and stack ranking. Leave benefits activate after 6 months, once the employee is confirmed (PL-02), and probation confirmation follows the PL-02 gate.'},
-  {t:'Observation on underperformance: 2 weeks', who:'Supervisor', d:'Underperformance in production triggers a 2-week Observation period: structured support and coaching, weekly performance reviews, transparent reporting to stakeholders. Improvement \u2192 exit Observation. No improvement \u2192 PIP, for confirmed employees only. **Where Observation is not cleared and the case is going to HR, the supervisor first tells the employee clearly that they have not cleared Observation and that their case is being forwarded to HR for further action**, and documents that conversation on email before forwarding anything.',
+  {t:'Underperformance: follow PL-08', who:'Supervisor', d:'Underperformance in production follows **PL-08**: feedback within 2 working days, **3 working days of monitoring**, a one-on-one, then **5 working days of observation** (extendable by 1 week for employees on probation). Improvement \u2192 back to normal. No improvement \u2192 a **2-week PIP** for confirmed employees, or escalation to Senior Management for employees on probation. **Where Observation is not cleared and the case is going to HR, the supervisor first tells the employee clearly that they have not cleared Observation and that their case is being forwarded to HR for further action**, and documents that conversation on email before forwarding anything.',
    note:{k:'comp', h:'Probation employees', x:'Employees on probation are not eligible for PIP. Where there is a need, they are always put on Observation directly.'}},
-  {t:'PIP: 2 weeks', who:'Supervisor + HR', d:'For confirmed employees. Meets expectations \u2192 continues in production. Does not \u2192 email to HR; separation runs through the pre-separation review in WF-05.'},
+  {t:'PIP: 2 weeks', who:'Supervisor + HR', d:'For confirmed employees, run as set out in PL-08 section E, with reviews at the end of week 1 and week 2 and a possible 1-week extension. Meets expectations \u2192 continues in production. Does not \u2192 referred to Senior Management; separation runs through the pre-separation review in WF-05.'},
   {t:'Communicate and document the targets either way', who:'Supervisor', d:'For both PIP and Observation, the targets, the expectations and the duration are communicated to the user and documented by the supervisor. These can vary case by case; the standard durations are the ones stated in this document.',
    note:{k:'comp', h:'Record', x:'Nobody sits in Observation or on a PIP without knowing what they must reach and by when, in writing.'}}
  ]}
@@ -1237,9 +1238,9 @@ sections:[
 }
 ,
 {
-id:'PL-05', cat:'policy', title:'IJP & Appraisal Review', short:'Who is eligible for an internal job posting and the three rounds to clear: plus the October appraisal cycle and who takes each one-on-one.',
+id:'PL-05', cat:'policy', title:'IJP & Appraisal Review', short:'Who is eligible for an internal job posting and the three rounds to clear: plus the October appraisal cycle, from the appraisal form to the December payout.',
 owner:'HR + Management', applies:'All confirmed employees; Supervisors and HR administer', version:'1.3', effective:'29 Sep 2026', review:'29 Mar 2027',
-purpose:'Internal movement should be a real route, not a rumour. This document states exactly who can apply for an internal job posting, what disqualifies them, and what they have to clear to be promoted internally. The appraisal review section is held open until the review model is finalised.',
+purpose:'Internal movement should be a real route, not a rumour. This document states exactly who can apply for an internal job posting, what disqualifies them, and what they have to clear to be promoted internally. It also sets out the yearly appraisal cycle: the appraisal form and one-on-one in October, the ranking by the reporting supervisor, the result meeting, and the payout in December with the October and November arrears.',
 sections:[
  {type:'steps', name:'A. Internal Job Posting (IJP)', time:'Whenever a posting opens', steps:[
   {t:'Check the eligibility: there are only two conditions', who:'Supervisor + HR', d:'The employee must be a **confirmed employee**, and must have **no warning letter within the last 3 months**, counted back from the month in which the IJP is being conducted. That is the whole eligibility test, nothing else is added to it.',
@@ -1253,7 +1254,14 @@ sections:[
    note:{k:'tip', h:'Not clearing is not a mark against them', x:'An unsuccessful IJP attempt is not held against the employee and does not affect their standing in their current role. The next session is a fresh attempt.'}}
  ]},
  {type:'steps', name:'B. Appraisal review', time:'October, every year', steps:[
-  {t:'Know the cycle: appraisal review runs in October', who:'HR + Management', d:'The appraisal review cycle is in **October**. The review for **everyone** starts in that month, it is not staggered by joining date or by team.'},
+  {t:'Know the cycle: appraisal review runs in October', who:'HR + Management', d:'The appraisal review cycle is in **October**. The review for **everyone** starts in that month, it is not staggered by joining date or by team. The cycle runs in five stages, in this order:',
+   tables:[{title:'The appraisal cycle at a glance', cols:['Stage','What happens','When'], rows:[
+     ['1. Appraisal form','Each employee fills in the **appraisal form** shared with them','October'],
+     ['2. Appraisal one-on-one','The appraisal one-on-one is held with each employee (steps below)','October'],
+     ['3. Ranking','Based on the one-on-one, the **reporting supervisor gives every employee their ranking**','After the one-on-ones'],
+     ['4. Result meeting','A one-on-one appraisal meeting is held with each employee and their **reporting supervisor** to share the outcome','After the ranking'],
+     ['5. Payout','The appraisal amount is **credited to the employee\u2019s bank account in December 2026**, including the **arrears for October and November**','December 2026']]}]},
+  {t:'Fill in the appraisal form', who:'Employee', d:'Each employee fills in the **appraisal form shared with them** and returns it within the October cycle. The one-on-one is held against what they wrote, so it is filled in before the meeting.'},
   {t:'Hold the one-on-one with your own scope of people', who:'Per the table', d:'Every person has their appraisal one-on-one taken by the level above them. **The steps below are the same at every level**: only who sits across the table changes.',
    tables:[{title:'Who conducts the appraisal one-on-one', cols:['For','Conducted by'], rows:[
      ['Users','Their **Team Lead**'],
@@ -1267,6 +1275,10 @@ sections:[
   {t:'Document the session on email and close the loop', who:'Supervisor', d:'The supervisor **sends an email to the employee** documenting everything from the session: what was appreciated, the areas for improvement agreed, the goals set, and what they asked for from us, and **keeps the hierarchy copied** on that email. **An appraisal conversation that was never written down did not happen**, and next October needs this cycle’s baseline to measure against.',
    note:{k:'comp', h:'No surprises in the room', x:'An appraisal one-on-one is not the place to raise a serious performance issue for the first time. Anything of that weight should already have been shared through documented feedback during the year (WF-09) or the progressive-discipline path (WF-05). Note also that an active warning letter deducts **0.25 from the rank for every month the letter is active**, counted from the month it was issued up to the appraisal month (WF-05): if that applies, the employee should already know before they walk in.'}},
   {t:'Everyone gets the one-on-one', who:'Reviewer', d:'The appraisal one-on-one happens in October for **everyone**, including employees on **PIP, Observation or probation**. Nobody is skipped because of their current status.'},
+  {t:'Give the ranking', who:'Reporting supervisor', d:'Based on the appraisal one-on-one, **each employee is given their ranking by the supervisor they report to**. Any warning-letter deduction applies to the rank as set out in WF-05.'},
+  {t:'Hold the result meeting with each employee', who:'Reporting supervisor', d:'Once rankings are given, a **one-on-one appraisal meeting is conducted for each employee with their reporting supervisor** to share the outcome. The meeting is documented on email, with the hierarchy copied, the same way as the appraisal one-on-one.'},
+  {t:'Payout: credited in December, with October and November arrears', who:'HR + Accounts', d:'The appraisal amount is **credited to the employee\u2019s bank account in December 2026**. That December credit **includes the arrears for October and November**, so nothing from the cycle is lost by the payout coming later.',
+   note:{k:'tip', h:'When someone asks \u201cwhen will I get it?\u201d', x:'The answer is December 2026, and the December credit covers October and November as arrears.'}},
   {t:'The evaluation criteria are still being defined', who:'Management', d:'The parameters the appraisal will be scored against are still being worked on. **Everything above is confirmed; the criteria are not.** Once they are agreed they are added here and this document is re-versioned.',
    note:{k:'tip', h:'Until then', x:'Do not quote appraisal criteria to an employee from memory or from a previous cycle. If someone asks, the honest answer is that the cycle is in October, their one-on-one will be taken by the level above them, and the criteria are being finalised and will be published here.'}}
  ]}
@@ -1324,6 +1336,59 @@ sections:[
  {type:'steps', name:'B. Work from home', time:'Approved WFH days only', steps:[
   {t:'A personal system is allowed, through the remote desktop', who:'Employee (WFH)', d:'An employee on **approved work from home** (PL-03) **can use their personal system**, because the company does not provide one for WFH. All work is done **through the remote desktop (RDP)**, never on the local machine. Nothing is saved, downloaded or worked on locally.',
    note:{k:'comp', h:'RDP is not optional', x:'Working on the personal system outside the remote desktop is the same as using a personal laptop for office work, and section A applies. The WFH exception covers the approved WFH dates only; it does not carry back into the office.'}}
+ ]}
+]
+},
+{
+id:'PL-08', cat:'policy', title:'Performance Improvement & Underperformance Management', short:'Feedback within 2 working days, 3 days of monitoring, a one-on-one, 5 days of observation, then the next step: escalation for probation, a 2-week PIP for confirmed employees, and 3 months of monitoring after a behavioural PIP.',
+owner:'Supervisors + Senior Management', applies:'Confirmed employees and employees on probation', version:'1.0', effective:'10 Nov 2026', review:'10 May 2027',
+purpose:'Anyone who falls short of the production target, the quality standard or their assigned tasks is managed through the same fair, time-bound process: timely feedback, coaching, and a reasonable opportunity to improve before any decision about continued employment. Every stage has a documented start date, end date, outcome and next step.',
+sections:[
+ {type:'steps', name:'A. Identify the gap and give feedback', time:'Within 2 working days', steps:[
+  {t:'Validate the gap against the data', who:'Supervisor', d:'When an employee fails to meet the **production target, quality threshold or task-performance expectations**, the supervisor first **validates the gap** against the process requirements and the available performance data.'},
+  {t:'Share the feedback within 2 working days', who:'Supervisor', d:'Communicate the gap to the employee **within 2 working days** of identifying it. Explain the **expected standard**, the **actual performance**, the **specific areas to improve**, and the **support available**. Document it on **email** or in the approved performance-tracking mechanism.'},
+  {t:'Raise the reason at the time, not at the review', who:'Employee → Supervisor', d:'An employee who deviates from the expected production, quality or task standard must **give a valid justification at the time the deviation occurs**, with supporting details, rather than waiting for the formal review. The supervisor **reviews and documents** it at the time and decides whether it is reasonable and acceptable.',
+   note:{k:'comp', h:'Post-facto reasons', x:'A justification given only during the performance review, with no earlier communication or escalation, will generally be treated as a post-facto explanation and may not be accepted as a valid reason.'}}
+ ]},
+ {type:'steps', name:'B. Initial monitoring', time:'3 working days', steps:[
+  {t:'Monitor for 3 working days', who:'Supervisor', d:'After the feedback, the employee is placed on a **monitoring period of 3 working days**. The supervisor reviews performance against the production, quality and task expectations and gives guidance wherever needed.'},
+  {t:'Evaluate and document the result', who:'Supervisor', d:'At the end of the 3 days, evaluate and **document** whether the employee met the standard. **Met consistently:** normal performance monitoring continues. **Gap persists:** hold a formal one-on-one **within 2 working days**.'}
+ ]},
+ {type:'steps', name:'C. One-on-one and observation', time:'5 working days', steps:[
+  {t:'Hold the one-on-one and agree the expectations', who:'Supervisor + Employee', d:'Explain the continuing gap, understand any challenges affecting performance, and identify the support or corrective action needed. Agree **clear, measurable and achievable** expectations: the production target, the quality threshold, the task requirements and how it will be reviewed. The discussion and action items are **shared on email and acknowledged by the employee**.'},
+  {t:'Observe for 5 working days', who:'Supervisor', d:'The employee then goes through an **observation period of 5 working days**. Review performance, give timely feedback and keep records of progress.'},
+  {t:'Document the assessment within 2 working days', who:'Supervisor', d:'At the end of the observation, assess whether the agreed expectations were met. The **final assessment and the recommended next step are documented within 2 working days**. The next step depends on whether the employee is on probation (section D) or confirmed (section E).'}
+ ]},
+ {type:'steps', name:'D. Next step: employees on probation', time:'After the observation', steps:[
+  {t:'Met the expectations: back to normal', who:'Supervisor', d:'If the employee met the production, quality and task expectations during monitoring and observation, they **continue in production** under the normal performance-management process.'},
+  {t:'Improving but not there yet: extend by 1 week', who:'Supervisor', d:'If performance is improving but the standard is not yet met, the observation period **may be extended by one more week**, at the supervisor’s discretion.'},
+  {t:'Still short: escalate to Senior Management for separation approval', who:'Supervisor → Senior Management', d:'If the employee still does not meet the expectations after the observation, the supervisor **escalates to Senior Management by formal email**, with the performance details and supporting documentation, **seeking approval for separation**.',
+   note:{k:'esc', h:'Approval first', x:'A separation decision is taken **only after Senior Management has approved it**.'}}
+ ]},
+ {type:'steps', name:'E. Next step: confirmed employees (PIP)', time:'2 weeks, plus 1 if extended', steps:[
+  {t:'Met the expectations: back to normal', who:'Supervisor', d:'If the employee met the expectations during monitoring and observation, they **continue in production** under the normal performance-management process.'},
+  {t:'Still short: put them on a 2-week PIP', who:'Supervisor', d:'If the employee still falls short, the supervisor recommends a formal **Performance Improvement Plan (PIP)**, active for **2 weeks** from the date it is formally communicated. The PIP email sets out the **measurable goals**, the **support and coaching**, the **review dates**, and the **consequences** of not reaching the standard, and **the employee acknowledges it**.'},
+  {t:'Review progress through the PIP', who:'Supervisor', d:'Hold and **document weekly progress reviews**, with feedback against each agreed goal. Feedback is also shared **every 3rd day, covering the previous 2 days**.'},
+  {t:'Decide at the end of week 1', who:'Supervisor', d:'**No improvement** compared with the monitoring and observation stages: refer the case to **Higher Management for review**. **Improving but not at the standard:** continue to week 2. **Meets the standard:** close the PIP and return the employee to normal performance management.'},
+  {t:'Decide at the end of week 2', who:'Supervisor', d:'**Meets the standard:** the PIP is closed successfully. **Not at the standard but improved** compared with week 1: a **1-week PIP extension** can be given, on the supervisor’s decision. **Not at the standard and no improvement**, or still below the minimum standard after the extended third week: refer the case to **Senior Management** with the documented performance history, coaching records, review outcomes and recommendation.'},
+  {t:'Recommend another project where it fits', who:'Supervisor', d:'If the supervisor believes the employee is not suited to the current project but has the skills, knowledge and capability to do well on another, this recommendation is **stated clearly** when the case is referred to Senior Management.'}
+ ]},
+ {type:'steps', name:'F. Referring a case to Senior Management', time:'Any stage', steps:[
+  {t:'Tell the employee the outcome and that it is escalated', who:'Supervisor', d:'At any stage of observation or PIP, when the case goes to Senior Management, the supervisor **communicates the outcome clearly** to the employee and **informs them that their case has been escalated** for review.'},
+  {t:'Document everything', who:'Supervisor', d:'Document the **performance gaps, observation results, PIP outcomes, feedback shared and supporting justifications**.'},
+  {t:'Explain what can happen next', who:'Supervisor', d:'Make clear that, based on Senior Management’s review and final decision, the employee **may be required to proceed with separation or may be reassigned to a different project**, depending on business requirements and suitability. Separation then runs through WF-05 section E and WF-03.'}
+ ]},
+ {type:'steps', name:'G. After a PIP for a behavioural issue', time:'3 months from clearing the PIP', steps:[
+  {t:'Monitor the same issue for 3 months', who:'Supervisor', d:'Once an employee **successfully clears a PIP**, the behavioural concerns it was raised for stay **under monitoring for the next 3 months**.'},
+  {t:'First repeat in the 3 months: document it on email', who:'Supervisor', d:'If the **same behavioural issue is repeated** within the 3 months, the **first repetition is formally documented through an email** to the employee.'},
+  {t:'Second repeat in the 3 months: refer to Senior Management', who:'Supervisor → HR → Senior Management', d:'If the same issue occurs a **second time** within the monitoring period, the matter can be **referred to Senior Management for review and decision**.'},
+  {t:'After 3 months clean: the regular process applies', who:'Supervisor', d:'If the employee completes the 3 months **without repeating the same issue**, any later recurrence is handled through the **regular PIP process**, following the applicable company guidelines.'}
+ ]},
+ {type:'steps', name:'H. Responsibilities, records and exceptions', time:'Throughout', steps:[
+  {t:'Know who is responsible for what', who:'Everyone', d:'**Supervisor:** communicate gaps, coach, complete reviews on time, keep the documentation and recommend the next step. **Employee:** understand the expectations, take part in coaching and make a reasonable effort to improve. **Senior Management:** review recommendations for PIP, continued observation or separation, for consistency, fairness and compliance.'},
+  {t:'Date and document every stage', who:'Supervisor', d:'Every monitoring period, observation period, PIP and probationary observation has a **documented start date, end date, review outcome and next step**.'},
+  {t:'Extensions and deviations need Senior Management approval', who:'Supervisor → Senior Management', d:'Any **extension or deviation** from these timelines must be **justified, documented and approved by Senior Management**.'},
+  {t:'Check for causes outside the employee’s control', who:'Supervisor', d:'Before a final decision, assess factors outside the employee’s reasonable control: **insufficient work allocation, system issues, inadequate training, or changes in process requirements**. The policy is applied the same way across teams, together with the existing HR policies and employment terms.'}
  ]}
 ]
 }
@@ -1417,6 +1482,9 @@ var SITUATIONS = [
  {q:'We\u2019re onboarding a new client', to:'WF-01'},
  {q:'I need to set up client reporting and calls', to:'WF-01'},
  {q:'Someone wants to apply for an internal job posting', to:'PL-05'},
+ {q:'Someone is asking when the appraisal amount will be credited', to:'PL-05'},
+ {q:'A team member keeps missing production or quality targets', to:'PL-08'},
+ {q:'Someone cleared a PIP but the same behaviour is back', to:'PL-08'},
  {q:'I need to hand work over to another department', to:'PL-06'},
  {q:'Someone wants to use their personal laptop for work', to:'PL-07'}
 ];
