@@ -1175,6 +1175,7 @@ sections:[
    note:{k:'comp', h:'Compliance', x:'A client-side location restriction overrides any internal approval. When in doubt, ask the client in writing via the escalation contact.'}},
   {t:'Route the approval: employee → supervisor → Sasha', who:'Employee → Supervisor → Sasha', d:'The request is **documented by the employee**. An email to their **immediate supervisor** setting out the ground and the dates. The supervisor **validates the request and approves the timeline**, then forwards it to **Sasha**, and **Sasha is the one who gives the final approval**. Everything must be **pre-approved** before the first WFH day. The request must be raised **at least 7 days in advance**; anything later is not a planned WFH. **An extension of work from home is decided case by case**, it is never automatic, and it goes back through the same route.',
    note:{k:'esc', h:'No approval, no WFH', x:'**If there is no approval from Sasha, work from home is not granted**, whatever the supervisor said, and whatever the ground. Verbal WFH does not exist.'}},
+  {t:'Same-day WFH requests: at least 2 hours before the shift', who:'Employee \u2192 Supervisor', d:'Any **same-day WFH request** must be submitted **at least 2 hours before the start of the scheduled shift**. A request submitted **later than that** is **subject to management approval**.'},
   {t:'Sign the workspace declaration', who:'Employee', d:'Private workspace where the screen is not visible to others, stable power, primary internet meeting the minimum speed plus a backup (hotspot), and a headset. The declaration is filed before the first WFH day.'}
  ]},
  {type:'steps', name:'B. Rules while working from home', time:'Every WFH day', steps:[
@@ -1189,13 +1190,22 @@ sections:[
   {t:'Be reachable like you are in office', who:'Employee', d:'Logged in through the shift, responsive on chat within the agreed window, camera on for scheduled meetings, breaks per the office schedule.'},
   {t:'Attend every meeting, carry every responsibility', who:'Employee', d:'It is **mandatory** to join all meetings, every time, and to fulfil every responsibility exactly as the employee would in office. Working from home is not a reason to miss a huddle, a call or a review.'},
   {t:'No leave during the WFH period', who:'Employee + Supervisor', d:'An employee cannot take leave while on work from home **unless the leave was approved in advance**. WFH days are working days.'},
-  {t:'Same targets, same QA', who:'Supervisor', d:'Production targets, QA sampling, and note standards are identical to office work. There is no separate WFH standard, in either direction.'}
+  {t:'Meet the WFH performance criteria: 90% production, 95% quality', who:'Employee + Supervisor', d:'Everyone working from home must maintain **both** of these standards. QA sampling and note standards stay the same as in office.',
+   tables:[{title:'WFH performance criteria', cols:['Measure','Minimum'], rows:[
+     ['**Production**','**90%** of the assigned target'],
+     ['**Quality**','**95%** audit score']]}]}
  ]},
  {type:'steps', name:'C. Discrepancies and cancellation', time:'Whenever an issue is seen', steps:[
+  {t:'Below the criteria for 1 week: 2 working days of monitoring, then cancellation', who:'Supervisor', d:'If the employee **fails either criterion** (90% production or 95% quality) **for 1 week**, their performance is **monitored for the next 2 consecutive working days**. If they **still fall short** during that observation, **their work from home is cancelled** and they **work from the office**.',
+   note:{k:'comp', h:'Tell them and document it', x:'Tell the employee on email when the 2 days of monitoring start and what they must reach. If WFH is then cancelled, the report-back rule below applies.'}},
   {t:'First issue: email as a verbal warning', who:'Supervisor', d:'Where the supervisor identifies any discrepancy or issue with the employee\u2019s work from home, **an email is sent to the user as a verbal warning**, recording what was seen and what must change. **This is the only consideration given.**'},
   {t:'Second time: work from home is cancelled', who:'Supervisor', d:'If it happens **one more time**, the work from home is **cancelled**. The employee returns to office from that point and the remaining approved days lapse. There is no third chance.'},
   {t:'Revoke when the basis changes', who:'Operations Manager', d:'Separately from the ladder above, WFH is revoked for performance drops, availability problems, workspace/security concerns, or any compliance issue. Revocation is operational, not disciplinary by itself, but the underlying cause may also follow WF-05 or PL-04.',
    note:{k:'esc', h:'Report back the next day', x:'Once work from home is cancelled for any reason, the employee is to **report to the office immediately, the very next day**. Until they show up, **every day is marked LWP**.'}}
+ ]},
+ {type:'steps', name:'D. Permanent WFH employees', time:'Ongoing', steps:[
+  {t:'Same underperformance policy as the office', who:'Supervisor', d:'Employees on a **permanent WFH arrangement** are governed by the **same Underperformance Management Policy as office-based employees** (PL-08).'},
+  {t:'Same expectations, same corrective action', who:'Supervisor', d:'The **same production, quality, performance-monitoring and corrective-action expectations** apply to them as to everyone else.'}
  ]}
 ]
 },
