@@ -1,0 +1,8 @@
+{
+  "name": "purview-store-room",
+  "private": true,
+  "description": "Purview Store Room: the official workflow and policy repository (single page: index.html).",
+  "scripts": {
+    "test": "NODE_PATH=$(npm root -g) node tests/run.js"
+  }
+}
