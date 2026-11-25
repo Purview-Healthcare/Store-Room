@@ -13,6 +13,8 @@ const checks = [];
 let currentFile = '';
 
 function check(name, fn) { checks.push({ name, fn, file: currentFile }); }
+/* A check that is waiting for an owner decision: listed, not run. */
+function pending(name, reason) { checks.push({ name, reason, pending: true, file: currentFile }); }
 
 /* The app's own data (SOPS, APPS, SITUATIONS, CATS, STORE_VERSION...),
    read straight from index.html without a browser. */
@@ -69,16 +71,17 @@ async function run() {
     currentFile = f;
     require(path.join(dir, f));
   }
-  let pass = 0, fail = 0;
+  let pass = 0, fail = 0, wait = 0;
   const failed = [];
   for (const c of checks) {
+    if (c.pending) { wait++; console.log('  WAIT  ' + c.name + '  (needs owner: ' + c.reason + ')'); continue; }
     try { await c.fn(); pass++; console.log('  PASS  ' + c.name); }
     catch (e) { fail++; failed.push(c); console.log('  FAIL  ' + c.name + '\n        ' + String(e && e.message || e).split('\n')[0]); }
   }
   if (browser) await browser.close();
-  console.log('\n' + pass + ' passed, ' + fail + ' failed, ' + checks.length + ' checks');
+  console.log('\n' + pass + ' passed, ' + fail + ' failed, ' + wait + ' waiting for owner, ' + checks.length + ' checks');
   if (failed.length) { console.log('Failed:'); failed.forEach((c) => console.log('  - [' + c.file + '] ' + c.name)); }
   process.exitCode = fail ? 1 : 0;
 }
 
-module.exports = { check, data, open, go, run, assert, URL };
+module.exports = { check, pending, data, open, go, run, assert, URL };
